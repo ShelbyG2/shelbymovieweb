@@ -73,22 +73,22 @@ const Hero = ({ randomShow }: HeroProps) => {
   };
 
   return (
-    <section aria-label="Hero" className="w-full">
+    <section aria-label="Hero" className="relative z-10 w-full">
       {randomShow && (
         <>
-          <div className="absolute inset-0 z-0 h-[100vw] w-full sm:h-[56.25vw]">
+          <div className="relative z-20 h-[100vw] w-full sm:h-[56.25vw]">
             <CustomImage
               src={`https://image.tmdb.org/t/p/original${
                 randomShow?.backdrop_path ?? randomShow?.poster_path ?? ''
               }`}
               alt={randomShow?.title ?? 'poster'}
-              className="-z-40 h-auto w-full object-cover"
+              className="h-auto w-full object-cover"
               sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 33vw"
               fill
               priority
             />
-            <div className="absolute bottom-0 left-0 right-0 top-0">
-              <div className="absolute bottom-[35%] left-[4%] top-0 z-10 flex w-[36%] flex-col justify-end space-y-2">
+            <div className="absolute bottom-0 left-0 right-0 top-0 z-30">
+              <div className="absolute bottom-[35%] left-[4%] top-0 z-40 flex w-[36%] flex-col justify-end space-y-2">
                 <h1 className="text-[3vw] font-bold">
                   {randomShow?.title ?? randomShow?.name}
                 </h1>
@@ -96,10 +96,8 @@ const Hero = ({ randomShow }: HeroProps) => {
                   <p className="text-green-600">
                     {Math.round(randomShow?.vote_average * 10) ?? '-'}% Match
                   </p>
-                  {/* <p className="text-gray-300">{randomShow?.release_date ?? "-"}</p> */}
                   <p>{randomShow?.release_date ?? '-'}</p>
                 </div>
-                {/* <p className="line-clamp-4 text-sm text-gray-300 md:text-base"> */}
                 <p className="hidden text-[1.2vw] sm:line-clamp-3">
                   {randomShow?.overview ?? '-'}
                 </p>
