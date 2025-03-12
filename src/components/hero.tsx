@@ -96,10 +96,10 @@ const Hero = ({ randomShow }: HeroProps) => {
                   <p className="text-green-600">
                     {Math.round(randomShow?.vote_average * 10) ?? '-'}% Match
                   </p>
-                   <p className="text-gray-300">{randomShow?.release_date ?? "-"}</p> 
+                  {/* <p className="text-gray-300">{randomShow?.release_date ?? "-"}</p> */}
                   <p>{randomShow?.release_date ?? '-'}</p>
                 </div>
-                 <p className="line-clamp-4 text-sm text-gray-300 md:text-base"> 
+                {/* <p className="line-clamp-4 text-sm text-gray-300 md:text-base"> */}
                 <p className="hidden text-[1.2vw] sm:line-clamp-3">
                   {randomShow?.overview ?? '-'}
                 </p>
@@ -142,7 +142,6 @@ const Hero = ({ randomShow }: HeroProps) => {
             <div className="opacity-71 absolute inset-0 right-[26.09%] z-[8] bg-gradient-to-r from-secondary to-85%"></div>
             <div className="absolute bottom-[-1px] left-0 right-0 z-[8] h-[14.7vw] bg-gradient-to-b from-background/0 from-30% via-background/30 via-50% to-background to-80%"></div>
           </div>
-          <div className="relative inset-0 -z-50 mb-5 pb-[60%] sm:pb-[40%]"></div>
         </>
       )}
     </section>
