@@ -17,7 +17,7 @@ A launching point for building a movie streaming website.
 
 1. Click the "Deploy with Vercel" button below to start the deployment process:
 
-- [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FShelbyG2%2Fshelbymovieweb&env=NEXT_PUBLIC_APP_URL,NEXT_PUBLIC_TMDB_TOKEN,NEXT_PUBLIC_SITE_NAME,NEXT_PUBLIC_TWITTER,NEXT_PUBLIC_INSTAGRAM)
+- [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FShelbyG2%2Fshelbymovieweb&env=NEXT_PUBLIC_APP_URL,NEXT_PUBLIC_TMDB_TOKEN,NEXT_PUBLIC_SITE_NAME)
 
 2. If you haven't logged in to Vercel, you'll be prompted to do so. You can log in with your GitHub account.
 
