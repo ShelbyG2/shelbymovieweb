@@ -30,7 +30,7 @@ To deploy on [Cloudflare Pages](https://pages.cloudflare.com/) you can use the f
 ## Local Development
 
 1. Clone the repository: `git clone https://github.com/ShelbyG2/shelbymovieweb`
-2. Navigate to the project directory: `cd movie-web-kickstart`
+2. Navigate to the project directory: `cd shelbymovieweb`
 3. Install dependencies: `npm install`
 4. Create .env file `cp .env.example .env`
 4. Start the development server: `npm run dev`
